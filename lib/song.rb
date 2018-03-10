@@ -38,5 +38,7 @@ class Song
     self.all.detect {|i| i.name == string_name_of_the_song}
   end
 
-
+  def self.alphabetical
+    self.all.sort_by { |x| x.name}
+  end
 end
