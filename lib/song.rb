@@ -15,16 +15,16 @@ class Song
   end
 
   def self.create
-    x= self.new
-    x.save
-    x
+    song= self.new
+    song.save
+    song
   end
 
   def self.create_by_name(string_name_of_the_song)
-    x= self.new
-    x.name = string_name_of_the_song
-    x.save
-    x
+    s= self.new
+    song.name = string_name_of_the_song
+    song.save
+    song
   end
 
 end
