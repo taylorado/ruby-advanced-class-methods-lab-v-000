@@ -40,10 +40,7 @@ class Song
 
   def self.find_or_create_by_name(string_name_of_the_song)
     if self.find_by_name(string_name_of_the_song) == nil
-      song = self.new
-      song.name = string_name_of_the_song
-      song.save
-      song
+      self.create_by_name(string_name_of_the_song)
     else
       self.find_by_name(string_name_of_the_song)
     end
