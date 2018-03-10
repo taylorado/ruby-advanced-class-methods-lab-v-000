@@ -18,6 +18,6 @@ class Song
     x= self.new
     x.save
     x
-  end  
+  end
 
 end
